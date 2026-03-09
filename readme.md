@@ -20,7 +20,7 @@ Each entry in the table includes:
 
 | LPA Leak Code | Issue Link | Reproduce |
 |---------------|------------|-----------|
-| [NextChat](https://github.com/ChatGPTNextWeb/NextChat/tree/38bffd423c7e2fd0210ecb768a33785c97ab2961) | [1598](https://github.com/ChatGPTNextWeb/NextChat/issues/1598) | [reproduce](./nextchat-fetch-leak/reproduce) |
+| [NextChat](https://github.com/ChatGPTNextWeb/NextChat/tree/38bffd423c7e2fd0210ecb768a33785c97ab2961) | [1598](https://github.com/ChatGPTNextWeb/NextChat/issues/1598) | [reproduce](./reproduce/NextChat/1598/) |
 
 
 ---
