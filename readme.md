@@ -21,6 +21,7 @@ Each entry in the table includes:
 | LPA Leak Code | Issue Link | Reproduce |
 |---------------|------------|-----------|
 | [NextChat](https://github.com/ChatGPTNextWeb/NextChat/tree/38bffd423c7e2fd0210ecb768a33785c97ab2961) | [1598](https://github.com/ChatGPTNextWeb/NextChat/issues/1598) | [reproduce](./reproduce/NextChat/1598/) |
+| [OpenWebUI](https://github.com/open-webui/open-webui/tree/3e65109900deea032b9c8921946fde8626cc188d) | [17437](https://github.com/open-webui/open-webui/issues/17437) | [reproduce](./reproduce/OpenWebUI/17437/) |
 
 
 ---
