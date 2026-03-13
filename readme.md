@@ -25,6 +25,7 @@ Each entry in the table includes:
 | [OpenWebUI](https://github.com/open-webui/open-webui/tree/a9405cc10103d1cd2f91e235250051a1eea2d09c) | [14393](https://github.com/open-webui/open-webui/discussions/14393) | [.](.) |
 | [OpenWebUI](https://github.com/open-webui/open-webui/tree/e6afa69f59295d2930ff57285d0933e207d8e4c3) | [14336](https://github.com/open-webui/open-webui/issues/14336) | [reproduce](./reproduce/OpenWebUI/14336/) |
 | [OpenWebUI](https://github.com/open-webui/open-webui/tree/e6afa69f59295d2930ff57285d0933e207d8e4c3) | [14039](https://github.com/open-webui/open-webui/discussions/14039) | [.](.) |
+| [OpenWebUI](https://github.com/open-webui/open-webui/tree/a7cbfeec9fd81955bfb4f65b591ccb4aa55d98ca) | [13482](https://github.com/open-webui/open-webui/discussions/13482) | [reproduce](./reproduce/OpenWebUI/13482/) |
 
 
 ---
