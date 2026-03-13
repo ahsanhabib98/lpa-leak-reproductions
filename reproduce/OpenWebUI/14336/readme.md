@@ -80,7 +80,7 @@ Description: memory leak test
 ```
 Click Create Knowledge.
 
-### Prepare Large Test File
+### Upload Large Test File
 
 Open the created knowledge base.
 
