@@ -127,3 +127,9 @@ Trigger Download
 ```bash
 Download / Pull
 ```
+
+Keep monitoring:
+
+```bash
+docker stats
+```
