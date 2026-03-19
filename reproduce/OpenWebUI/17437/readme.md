@@ -28,7 +28,7 @@ This experiment verifies the **absence of application-level encryption at rest**
 ---
 ## Instructions to Reproduce
 
-## Run the Reproduction Script
+### Run the Reproduction Script
 ---
 
 ```bash
