@@ -14,7 +14,7 @@ import requests
 BASE_URL = "http://localhost:3000"
 
 USER_EMAIL = "user@example.org"
-USER_PASSWORD = "12345678"
+USER_PASSWORD = "userpassword"
 
 UPLOAD_FILE_PATH = "./lorem_file.docx"
 
@@ -129,7 +129,7 @@ def main() -> None:
     user_token = login(USER_EMAIL, USER_PASSWORD)
     print(" User login successful")
 
-    print("\n[2/3] Upload file as user")
+    print("\n[2/3] Upload lorem_file.docx as user")
     result = upload_file(user_token, upload_path)
     print("Upload response:")
     print(result)
