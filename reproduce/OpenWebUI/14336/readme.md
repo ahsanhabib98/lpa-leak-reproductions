@@ -40,6 +40,7 @@ To reproduce the issue, prepare a large file (~2 GB). You can use any file type.
 ### Configuration
 
 Before running the script, update the openai api key and file path in `reproducer.sh`:
+
 ```bash
 OPENAI_API_KEY="sk-xxxx"
 TEST_FILE="./test_file.zip"
@@ -51,3 +52,11 @@ TEST_FILE="./test_file.zip"
 ```bash
 chmod +x reproducer.sh && ./reproducer.sh
 ```
+
+### Monitoring Memory Usage
+During execution, the script records container memory usage in:
+
+```bash
+memory_log.csv
+```
+
