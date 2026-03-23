@@ -33,86 +33,9 @@ The reproduction performs the following actions manually:
 
 ## Instructions to Reproduction
 
-### Run OpenWebUI with Docker
-
-Run the container:
-
-```bash
-docker compose build --no-cache
-docker compose up
-```
-Open the application:
-```bash
-http://localhost:3000
-```
+### Run the Reproduction Script
 ---
-### Create a user account
-```bash
-name: user
-email: user@example.org
-password: userpassword
-```
-### Configure Embedding Settings
-Open Admin Settings -> Documents.
 
-Configure the following:
 ```bash
-Embedding -> Embedding Model: text-embedding-3-large
-Retrieval -> Hybrid Search: Enabled
-```
-### Prepare Large Test File
-Create a large file (around 1–2 GB).
-```bash
-fallocate -l 2G large_test.pdf
-```
-
-### Create a Knowledge Base
-Inside Open WebUI:
-```bash
-Workspace -> Knowledge
-```
-Click the + (Add) button.
-
-Fill the fields:
-```bash
-Name: leak-test
-Description: memory leak test
-```
-Click Create Knowledge.
-
-### Upload Large Test File
-
-Open the created knowledge base.
-
-Click the + (Add) button.
-
-Choose:
-```bash
-Upload File
-```
-Select the large file:
-```bash
-large_test.pdf
-```
-
-### Monitor Memory Usage
-Open a terminal and run:
-```bash
-docker stats open-webui
-```
-
-### Observed Behavior
-During large file upload:
-- Memory usage continuously increases
-- System may become slow or freeze
-- Memory does not decrease after upload completes
-
-### Recovery
-To recover memory:
-```bash
-docker restart open-webui
-```
-or
-```bash
-docker rm -f open-webui
+chmod +x reproducer.sh && ./reproducer.sh
 ```
