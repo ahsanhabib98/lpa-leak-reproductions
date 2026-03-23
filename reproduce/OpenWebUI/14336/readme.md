@@ -33,6 +33,18 @@ The reproduction performs the following actions manually:
 
 ## Instructions to Reproduction
 
+### Preparing Test File
+
+To reproduce the issue, prepare a large file (~2 GB). You can use any file type.
+
+### Configuration
+
+Before running the script, update the openai api key and file path in `reproducer.sh`:
+```bash
+OPENAI_API_KEY="sk-xxxx"
+TEST_FILE="./test_file.zip"
+```
+
 ### Run the Reproduction Script
 ---
 
