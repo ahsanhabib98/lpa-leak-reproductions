@@ -1,6 +1,6 @@
-# Open WebUI Knowledge Upload Memory Leak Reproducer
+# Open WebUI Knowledge Upload Memory Leak Reproducer ([v0.6.10](https://github.com/open-webui/open-webui/tree/e6afa69f59295d2930ff57285d0933e207d8e4c3))
 
-This guide reproduces the behavior described in GitHub Issue **#14336**.
+This guide reproduces the behavior described in GitHub Issue **([#14336](https://github.com/open-webui/open-webui/issues/14336))**.
 
 The issue states that **uploading large files or directories to the Knowledge feature in Open WebUI causes memory usage to continuously increase**, and memory does **not return to normal after processing**, potentially causing the system to freeze or run out of memory.
 
