@@ -1,6 +1,6 @@
-# Open WebUI Memory Sharing to External Provider Reproducer
+# Open WebUI Memory Sharing to External Provider Reproducer ([v0.6.5](https://github.com/open-webui/open-webui/tree/07d8460126a686de9a99e2662d06106e22c3f6b6))
 
-This guide reproduces the behavior described in GitHub Discussion **#13482**.
+This guide reproduces the behavior described in GitHub Discussion **([#13482](https://github.com/open-webui/open-webui/issues/14336))**.
 
 The discussion states that **Open WebUI automatically injects user memories into prompts sent to models**, including **external providers** (e.g., OpenAI, OpenRouter).
 
