@@ -24,7 +24,7 @@ Each entry in the table includes:
 | [OpenWebUI](https://github.com/open-webui/open-webui/tree/171021cfa4276f63fd9fd7f31fa0c904fb13c24c) | [17437](https://github.com/open-webui/open-webui/issues/17437) | [reproduce](./reproduce/OpenWebUI/17437/) |
 | [OpenWebUI](https://github.com/open-webui/open-webui/tree/e6afa69f59295d2930ff57285d0933e207d8e4c3) | [14336](https://github.com/open-webui/open-webui/issues/14336) | [reproduce](./reproduce/OpenWebUI/14336/) |
 | [OpenWebUI](https://github.com/open-webui/open-webui/tree/07d8460126a686de9a99e2662d06106e22c3f6b6) | [13482](https://github.com/open-webui/open-webui/discussions/13482) | [reproduce](./reproduce/OpenWebUI/13482/) |
-| [OpenWebUI](https://github.com/open-webui/open-webui/tree/8d3c73aed59a349b18a584ade10eba81bd100008) | [8829](https://github.com/open-webui/open-webui/discussions/8829) | [reproduce](./reproduce/OpenWebUI/8829/) |
+| [OpenWebUI](https://github.com/open-webui/open-webui/tree/506dc0149ca973e20768fa3d6f171afac289f606) | [8829](https://github.com/open-webui/open-webui/discussions/8829) | [reproduce](./reproduce/OpenWebUI/8829/) |
 | [OpenWebUI](https://github.com/open-webui/open-webui/tree/c4ea31357f49d08a14c86b2bd85fdcd489512e91) | [7160](https://github.com/open-webui/open-webui/discussions/7160) | [reproduce](./reproduce/OpenWebUI/7160/) |
 | [OpenWebUI](https://github.com/open-webui/open-webui/tree/c869652ef4907dd123a140d9a08a0c239e690b08) | [4601](https://github.com/open-webui/open-webui/issues/4601) | [reproduce](./reproduce/OpenWebUI/4601/) |
 | [OpenWebUI](https://github.com/open-webui/open-webui/tree/3933db2c91e635da52a28a9e7e2927f551b2fee6) | [3047](https://github.com/open-webui/open-webui/discussions/3047) | [reproduce](./reproduce/OpenWebUI/3047/) |
