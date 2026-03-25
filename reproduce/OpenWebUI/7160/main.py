@@ -240,7 +240,6 @@ def main():
     inspect_db()
 
     print("\nDone.")
-    print("If AUTH ROW shows ldapuser@example.org with a non-empty password value, the issue is reproduced.")
 
 
 if __name__ == "__main__":
