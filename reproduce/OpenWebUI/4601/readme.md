@@ -1,6 +1,6 @@
-# Open WebUI Cross-User File Leakage Reproducer
+# Open WebUI Cross-User File Leakage Reproducer ([v0.3.12](https://github.com/open-webui/open-webui/tree/c869652ef4907dd123a140d9a08a0c239e690b08))
 
-This guide reproduces the behavior described in GitHub Issue **#4601**.
+This guide reproduces the behavior described in GitHub Issue **([#4601](https://github.com/open-webui/open-webui/issues/4601))**.
 
 The issue states that **when a user uploads an empty file (no extractable content), Open WebUI may return a previously uploaded file from another user**, resulting in **cross-user data leakage**.
 
@@ -32,88 +32,9 @@ The reproduction performs the following actions manually:
 
 ## Instructions to Reproduce
 
-### Run OpenWebUI with Docker
+### Run the Reproduction Script
+---
 
 ```bash
-docker compose build
-docker compose up
+chmod +x reproducer.sh && ./reproducer.sh
 ```
-Open the application:
-
-```bash
-http://localhost:3000
-```
-
-### Create User Accounts
-
-Create two users via the UI:
-
-```bash
-User1:
-email: user1@example.com
-password: ...........
-
-User2:
-email: user2@example.com
-password: ...........
-```
-
-### Setup Ollama Model
-
-Pull a model inside the container:
-
-```bash
-docker exec -it ollama ollama pull llama3.2:latest
-```
-
-Verify:
-
-```bash
-docker exec -it ollama ollama list
-```
-
-### Prepare Test Files
-
-Create a file with content:
-
-```bash
-with_contents.docx
-```
-
-Create an empty file:
-
-```bash
-empty.docx
-```
-
-### User1 Upload (Valid File)
-
-Login as User1:
-
-```bash
-Start a new chat
-Upload with_contents.docx
-```
-Ask:
-
-```bash
-What is inside the file?
-```
-
-### User2 Upload (Empty File)
-
-Login as User2:
-
-```bash
-Start a new chat
-Upload empty.docx
-```
-Ask:
-
-```bash
-What is inside the file?
-```
-
-### Observed Behavior
-
-👉 User2 receives User1’s file content
