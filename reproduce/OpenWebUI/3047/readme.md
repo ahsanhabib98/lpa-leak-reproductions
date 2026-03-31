@@ -1,6 +1,6 @@
 # Open WebUI Reranker Download Memory Leak / Lock-Up Reproducer
 
-This guide reproduces the behavior described in GitHub Discussion **#3047**.
+This guide reproduces the behavior described in GitHub Discussion **([#3047](https://github.com/open-webui/open-webui/issues/3047))**.
 
 The issue states that **downloading a reranker model (`BAAI/bge-reranker-v2-m3`) via the Hybrid Search settings can cause Open WebUI to consume excessive memory and potentially lock up**, especially when the model is not properly supported.
 
@@ -35,101 +35,9 @@ The reproduction performs the following actions manually:
 
 ## Instructions to Reproduce
 
-### Run OpenWebUI with Docker
-
-Create and start the environment:
-
-```bash
-mkdir openwebui
-cd openwebui
-```
-
-Create docker-compose.yml:
+### Run the Reproduction Script
+---
 
 ```bash
-services:
-  ollama:
-    image: ollama/ollama:0.1.42
-    container_name: ollama
-    restart: unless-stopped
-    tty: true
-    ports:
-      - "11434:11434"
-    volumes:
-      - ollama:/root/.ollama
-
-  open-webui:
-    image: ghcr.io/open-webui/open-webui:v0.3.2
-    container_name: open-webui
-    restart: unless-stopped
-    depends_on:
-      - ollama
-    ports:
-      - "3000:8080"
-    environment:
-      - OLLAMA_BASE_URL=http://ollama:11434
-    volumes:
-      - open-webui:/app/backend/data
-
-volumes:
-  ollama: {}
-  open-webui: {}
-```
-
-Start containers:
-```bash
-docker compose up
-```
-
-Open the application:
-```bash
-http://localhost:3000
-```
-
-### Create User Account
-
-Register a user via the UI:
-
-```bash
-email: admin@example.com
-password: ...........
-```
-
-### Monitor System
-
-Open a terminal to monitor memory:
-
-```bash
-docker stats
-```
-
-### Enable Hybrid Search
-
-In Open WebUI:
-```bash
-Settings -> Admin Settings -> Documents
-```
-
-Turn ON:
-```bash
-Hybrid Search
-```
-
-### Set Reranker Model
-
-Enter: 
-```bash
-BAAI/bge-reranker-v2-m3
-```
-
-Trigger Download
-
-```bash
-Download / Pull
-```
-
-Keep monitoring:
-
-```bash
-docker stats
+chmod +x reproducer.sh && ./reproducer.sh
 ```
