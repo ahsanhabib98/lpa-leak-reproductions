@@ -1,4 +1,4 @@
-# Open WebUI Reranker Download Memory Leak / Lock-Up Reproducer
+# Open WebUI Reranker Download Memory Leak / Lock-Up Reproducer ([v0.3.2](https://github.com/open-webui/open-webui/tree/3933db2c91e635da52a28a9e7e2927f551b2fee6))
 
 This guide reproduces the behavior described in GitHub Discussion **([#3047](https://github.com/open-webui/open-webui/issues/3047))**.
 
