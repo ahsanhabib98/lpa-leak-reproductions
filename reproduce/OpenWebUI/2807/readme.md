@@ -1,6 +1,6 @@
-# Open WebUI Admin Chat Access / Privacy Issue Reproducer
+# Open WebUI Admin Chat Access / Privacy Issue Reproducer ([v0.2.4](https://github.com/open-webui/open-webui/tree/f28877f4db2a136f26c495e033f1d2b4ea1b405c))
 
-This guide reproduces the behavior described in GitHub Discussion **#2807**.
+This guide reproduces the behavior described in GitHub Discussion **([#2807](https://github.com/open-webui/open-webui/issues/2807))**.
 
 The discussion highlights that **admin users may be able to view other users' conversations**, raising a potential privacy concern.
 
@@ -31,73 +31,9 @@ The reproduction performs the following actions manually:
 
 ---
 
-## Instructions to Reproduce
-
-### Run OpenWebUI with Docker
-
-```bash
-docker compose build
-docker compose up
-```
-Open the application:
+### Run the Reproduction Script
+---
 
 ```bash
-http://localhost:3000
-```
-
-### Create User Accounts
-
-Create two users via the UI:
-
-```bash
-Admin:
-email: admin@example.com
-password: ...........
-
-User:
-email: user@example.com
-password: ...........
-```
-
-### Setup Ollama Model
-
-Pull a model inside the container:
-
-```bash
-docker exec -it ollama ollama pull llama3.2:latest
-```
-
-Verify:
-
-```bash
-docker exec -it ollama ollama list
-```
-
-### Generate User Chat Data
-
-Login as normal user:
-
-```bash
-user@example.com
-```
-
-Create multiple chats and send messages:
-
-```bash
-PRIVATE TEST CHAT 1
-PRIVATE TEST CHAT 2
-```
-Logout after creating chats.
-
-### Access as Admin
-
-Login as admin:
-
-```bash
-admin@example.com
-```
-Navigate:
-
-```bash
-Admin Panel -> Users -> View Chats
+chmod +x reproducer.sh && ./reproducer.sh
 ```
