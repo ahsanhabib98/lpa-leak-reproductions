@@ -28,7 +28,7 @@ Each entry in the table includes:
 | [OpenWebUI](https://github.com/open-webui/open-webui/tree/c869652ef4907dd123a140d9a08a0c239e690b08) | [4601](https://github.com/open-webui/open-webui/issues/4601) | [reproduce](./reproduce/OpenWebUI/4601/) |
 | [OpenWebUI](https://github.com/open-webui/open-webui/tree/3933db2c91e635da52a28a9e7e2927f551b2fee6) | [3047](https://github.com/open-webui/open-webui/discussions/3047) | [reproduce](./reproduce/OpenWebUI/3047/) |
 | [OpenWebUI](https://github.com/open-webui/open-webui/tree/f28877f4db2a136f26c495e033f1d2b4ea1b405c) | [2807](https://github.com/open-webui/open-webui/discussions/2807) | [reproduce](./reproduce/OpenWebUI/2807/) |
-| [MetaGPT](https://github.com/FoundationAgents/MetaGPT/tree/ab77bde54cca20d7176e968c994331d1a7fefa3e) | [868](https://github.com/FoundationAgents/MetaGPT/issues/868) | [reproduce](./reproduce/OpenWebUI/868/) |
+| [MetaGPT](https://github.com/FoundationAgents/MetaGPT/tree/ab77bde54cca20d7176e968c994331d1a7fefa3e) | [868](https://github.com/FoundationAgents/MetaGPT/issues/868) | [reproduce](./reproduce/MetaGPT/868/) |
 
 
 ---
